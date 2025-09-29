@@ -1,12 +1,15 @@
+using System;
 using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
+    public int health = 50;
     [SerializeField] private float movespeed = 2f;
     
     private Transform checkpoint;
     private Rigidbody2D rb;
-    private int index = 0;
+    [NonSerialized] public int index = 0;
+    [NonSerialized] public float distance =0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -20,6 +23,8 @@ public class enemy : MonoBehaviour
     void Update()
     {
         checkpoint = enemymanager.main.checkpoints[index];
+        distance = Vector2.Distance(transform.position, enemymanager.main.checkpoints[index].position);
+
         if(Vector2.Distance(checkpoint.transform.position, transform.position) <= 0.1f)
         {
             index++;
@@ -27,6 +32,10 @@ public class enemy : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+        if(health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -36,5 +45,10 @@ public class enemy : MonoBehaviour
         Vector2 direction = (checkpoint.position - transform.position).normalized;
         transform.right = checkpoint.position - transform.position;
         rb.linearVelocity = direction * movespeed;
+    }
+
+    public void Damage(int damage)
+    {
+        health -= damage;
     }
 }

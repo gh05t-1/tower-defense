@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 512813641688093842}
   - component: {fileID: 5820100647519894676}
   - component: {fileID: 904668138870533222}
+  - component: {fileID: 8045092738014878820}
   - component: {fileID: 7634903690524505282}
   m_Layer: 0
   m_Name: turtle
@@ -117,6 +118,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &8045092738014878820
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159541980295985215}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.04218912, y: 0}
+  m_Radius: 1.0534186
 --- !u!114 &7634903690524505282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37048cbd08d6757418757f1f20f46330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 0.5
+  health: 50
+  movespeed: 0.75
 --- !u!1 &8993005848178249231
 GameObject:
   m_ObjectHideFlags: 0
