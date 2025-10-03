@@ -158,11 +158,11 @@ MonoBehaviour:
   - {fileID: 1132368523}
   - {fileID: 323279892}
   spawnpoint: {fileID: 1843185805}
-  wave: 5
-  enemyCount: 12
+  wave: 1
+  enemyCount: 6
   enemyCountRate: 0.2
-  spawnDelayMax: 1
-  spawnDelayMin: 0.75
+  spawnDelayMax: 2
+  spawnDelayMin: 1.75
   turtle: {fileID: 5159541980295985215, guid: 734100cdef9313f41b246c0ba77b9de8, type: 3}
   whaleShark: {fileID: 1383350782415096725, guid: e1ba7ea7a00aa6742b90e9d30171bde0, type: 3}
   walkingFish: {fileID: 4102136086641466277, guid: 92ccc1908ede72e40bac439f706cac8d, type: 3}
@@ -794,7 +794,7 @@ MonoBehaviour:
   damage: 25
   fireRate: 1
   first: 0
-  last: 1
+  last: 0
   strong: 1
 --- !u!1 &1843185804
 GameObject:
