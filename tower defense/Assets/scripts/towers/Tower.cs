@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -13,13 +14,16 @@ public class Tower : MonoBehaviour
     public bool last = false;
     public bool strong = false;
 
+    [Header("Effects")]
+    [SerializeField] GameObject fireEffect;
+
     [NonSerialized]
     public GameObject target;
     private float cooldown = 0f;
 
     void Start()
     {
-        
+        fireEffect.SetActive(false);
     }
 
     void Update()
@@ -31,11 +35,18 @@ public class Tower : MonoBehaviour
                 transform.right = target.transform.position - transform.position;
                 target.GetComponent<enemy>().Damage(damage);
                 cooldown = 0f;
+                StartCoroutine(FireEffect());
             }
             else
             {
                 cooldown += 1 * Time.deltaTime;
             }
         }
+    }
+    IEnumerator FireEffect()
+    {
+        fireEffect.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        fireEffect.SetActive(false);
     }
 }

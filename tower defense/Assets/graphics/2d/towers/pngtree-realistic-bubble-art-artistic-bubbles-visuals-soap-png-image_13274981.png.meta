@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: 5883f1a0211d5bb48b7fad8e7c589296
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4066452254306282192
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_0
+  - first:
+      213: 5423914314662195011
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_1
+  - first:
+      213: 3482063915923229746
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_2
+  - first:
+      213: 7705489855664405379
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_3
+  - first:
+      213: -5526305007438684166
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_4
+  - first:
+      213: -386654738435767603
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_5
+  - first:
+      213: 3041189853195674989
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_6
+  - first:
+      213: 6279723281294283892
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_7
+  - first:
+      213: 3715115726904309309
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_8
+  - first:
+      213: -1983531762784969219
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_9
+  - first:
+      213: 1537124567142015667
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_10
+  - first:
+      213: -5751755893942848889
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_11
+  - first:
+      213: 3363875536265850758
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_12
+  - first:
+      213: 2318180493064702186
+    second: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 38
+        width: 170
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035dcfd383f0197c0800000000000000
+      internalID: -4066452254306282192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 274
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fa891055d954b40800000000000000
+      internalID: 5423914314662195011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 264
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c4fc9cea6c25030800000000000000
+      internalID: 3482063915923229746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 233
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bb043c2366fea60800000000000000
+      internalID: 7705489855664405379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 174
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff972710ee9e43b0800000000000000
+      internalID: -5526305007438684166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 206
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc280d0609352aaf0800000000000000
+      internalID: -386654738435767603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_6
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 188
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65204efe0a743a20800000000000000
+      internalID: 3041189853195674989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_7
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 155
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474db4d8d0f062750800000000000000
+      internalID: 6279723281294283892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 93
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d363991f11ebe8330800000000000000
+      internalID: 3715115726904309309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_9
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 65
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd5f76fe541974e0800000000000000
+      internalID: -1983531762784969219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2a60856a6f45510800000000000000
+      internalID: 1537124567142015667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_11
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 22
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782f6c21d78ad20b0800000000000000
+      internalID: -5751755893942848889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 37
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fa0c74af2eeae20800000000000000
+      internalID: 3363875536265850758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-realistic-bubble-art-artistic-bubbles-visuals-soap-png-image_13274981_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 36
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae88c5e40e4db2020800000000000000
+      internalID: 2318180493064702186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,61 @@
+using System;
+using UnityEngine;
+
+public class TowerPlacement : MonoBehaviour
+{
+    [SerializeField] private SpriteRenderer rangeSprite;
+    [SerializeField] private CircleCollider2D rangeCollider;
+    [SerializeField] private Color gray;
+    [SerializeField] private Color red;
+
+    [NonSerialized] public bool isPlacing = true;
+    private bool isRestricted = false;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        rangeCollider.enabled = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isPlacing)
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            transform.position = mousePosition;
+        }
+
+        if (Input.GetMouseButtonDown(1) && !isRestricted)
+        {
+            rangeCollider.enabled = true;
+            isPlacing = false; 
+            GetComponent<TowerPlacement>().enabled = false;
+        }
+
+        if (isRestricted)
+        {
+            rangeSprite.color = red;
+        }
+        else
+        {
+            rangeSprite.color = gray;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Restricted" || collision.gameObject.tag == "Tower" && isPlacing)
+        {
+            isRestricted = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Restricted" || collision.gameObject.tag == "Tower" && isPlacing)
+        {
+            isRestricted = false;
+        }
+    }
+}
