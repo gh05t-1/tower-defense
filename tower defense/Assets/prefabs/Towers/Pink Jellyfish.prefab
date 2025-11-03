@@ -100,7 +100,8 @@ GameObject:
   - component: {fileID: 2539027905654314101}
   - component: {fileID: 7022763982011390665}
   - component: {fileID: 5919956146440500007}
-  m_Layer: 0
+  - component: {fileID: 7365584159677117418}
+  m_Layer: 6
   m_Name: Pink Jellyfish
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -120,8 +121,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7434315484410156213}
   - {fileID: 3853861974993086698}
+  - {fileID: 7434315484410156213}
   - {fileID: 4946354951116516983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 92.098}
@@ -201,8 +202,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
-  damage: 50
+  damage: 30
   fireRate: 2
+  cost: 100
   first: 1
   last: 0
   strong: 0
@@ -223,6 +225,32 @@ MonoBehaviour:
   rangeCollider: {fileID: 5108429893780749369}
   gray: {r: 0.21568629, g: 0.21568629, b: 0.21568629, a: 0.45882353}
   red: {r: 0.78867924, g: 0.08779631, b: 0.42761835, a: 0.47843137}
+--- !u!114 &7365584159677117418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291211233113774018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffc4c97902dfb9439299891db9f8c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - range: 16
+    damage: 40
+    fireRate: 2
+    cost: 200
+  - range: 18
+    damage: 50
+    fireRate: 1.75
+    cost: 300
+  - range: 20
+    damage: 75
+    fireRate: 1.5
+    cost: 450
+  towerRange: {fileID: 7307137056041364219}
 --- !u!1 &7366596448179464442
 GameObject:
   m_ObjectHideFlags: 0

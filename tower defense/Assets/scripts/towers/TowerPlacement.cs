@@ -8,11 +8,14 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] private Color gray;
     [SerializeField] private Color red;
 
-    [NonSerialized] public bool isPlacing = true;
+    [NonSerialized]public bool isPlacing = true;
     private bool isRestricted = false;
+
+    private Tower tower;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        tower = GetComponent<Tower>();
         rangeCollider.enabled = false;
     }
 
@@ -26,10 +29,12 @@ public class TowerPlacement : MonoBehaviour
             transform.position = mousePosition;
         }
 
-        if (Input.GetMouseButtonDown(1) && !isRestricted)
+        if (Input.GetMouseButtonDown(1) && !isRestricted && tower.cost < Player.main.money)
         {
             rangeCollider.enabled = true;
             isPlacing = false; 
+            rangeSprite.enabled = false;
+            Player.main.money -= tower.cost;
             GetComponent<TowerPlacement>().enabled = false;
         }
 

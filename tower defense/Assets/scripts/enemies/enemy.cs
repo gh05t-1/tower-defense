@@ -5,6 +5,7 @@ public class enemy : MonoBehaviour
 {
     public int health = 50;
     [SerializeField] private float movespeed = 2f;
+    [SerializeField] private int value = 10;
     
     private Transform checkpoint;
     private Rigidbody2D rb;
@@ -30,13 +31,11 @@ public class enemy : MonoBehaviour
             index++;
             if(index >= enemymanager.main.checkpoints.Length)
             {
+                Player.main.Damage(health);
                 Destroy(gameObject);
             }
         }
-        if(health <= 0)
-        {
-            Destroy(gameObject);
-        }
+
     }
 
     // Update is called once per frame
@@ -50,5 +49,10 @@ public class enemy : MonoBehaviour
     public void Damage(int damage)
     {
         health -= damage;
+        if (health <= 0)
+        {
+            Player.main.money += value;
+            Destroy(gameObject);
+        }
     }
 }

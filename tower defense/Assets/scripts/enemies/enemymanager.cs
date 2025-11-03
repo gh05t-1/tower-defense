@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class enemymanager : MonoBehaviour
@@ -23,9 +24,14 @@ public class enemymanager : MonoBehaviour
     [SerializeField] private float whaleSharkRate = 0.4f;
     [SerializeField] private float walkingFishRate = 0.1f;
 
+    [SerializeField] private GameObject wavePanel;
+    [SerializeField] private TextMeshProUGUI waveCounterGUI;
+
     private bool wavedone = false;
+    private bool waveover = false;
     private List<GameObject> waveset =  new List<GameObject> ();
     private int enemyLeft;
+    public int waveCount = 1;
 
     private int turtleCount;
     private int whaleSharkCount;
@@ -41,20 +47,15 @@ public class enemymanager : MonoBehaviour
     void Update()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (Input.GetKeyDown(KeyCode.Return) && wavedone && enemies.Length == 0)
+
+        if (!waveover && wavedone && enemies.Length == 0)
         {
-            wave++;
-            wavedone = false;
-            enemyCount += Mathf.RoundToInt(enemyCount * enemyCountRate);
-            SetWave();
+            Player.main.money += 50 + (10 * wave);
+            waveover = true;
+            wavePanel.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.D) && wavedone)
-        {
-            for (int i = 0; i < enemies.Length; i++)
-            {
-                Destroy(enemies[i]);
-            }
-        }
+
+        waveCounterGUI.text = "Wave: " + waveCount.ToString();
     }
 
     private void SetWave()
@@ -104,6 +105,22 @@ public class enemymanager : MonoBehaviour
             temp.RemoveAt(index);
         }
         return result;
+    }
+
+    public void NextWave()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        wavePanel.SetActive(false);
+        waveCount++;
+        if (wavedone && enemies.Length == 0)
+        { 
+            wave++;
+            wavedone = false;
+            waveover =false;
+            enemyCount += Mathf.RoundToInt(enemyCount * enemyCountRate);
+            SetWave();
+        }
     }
     IEnumerator spawn()
     {

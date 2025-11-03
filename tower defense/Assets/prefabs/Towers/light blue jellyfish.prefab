@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4057119352533231628}
   - component: {fileID: 2198472163410879739}
   - component: {fileID: -7081513514191814917}
-  m_Layer: 0
+  - component: {fileID: -5763903852725303787}
+  m_Layer: 6
   m_Name: light blue jellyfish
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -33,8 +34,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5410379535119775072}
   - {fileID: 5762884789806150109}
+  - {fileID: 5410379535119775072}
   - {fileID: 6083925105761033455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 92.098}
@@ -113,9 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38068711291c8364bafe7ce0cd19b825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 6
-  damage: 50
+  range: 5
+  damage: 25
   fireRate: 1.5
+  cost: 75
   first: 1
   last: 0
   strong: 0
@@ -136,6 +138,32 @@ MonoBehaviour:
   rangeCollider: {fileID: 5325503990989779331}
   gray: {r: 0.3372549, g: 0.3372549, b: 0.3372549, a: 0.46666667}
   red: {r: 0.6075471, g: 0, b: 0.113531515, a: 0.52156866}
+--- !u!114 &-5763903852725303787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286442842509094206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffc4c97902dfb9439299891db9f8c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - range: 5
+    damage: 30
+    fireRate: 1.5
+    cost: 150
+  - range: 5
+    damage: 40
+    fireRate: 1.4
+    cost: 225
+  - range: 6
+    damage: 50
+    fireRate: 1.25
+    cost: 350
+  towerRange: {fileID: 2735377685936638654}
 --- !u!1 &3287953476576725499
 GameObject:
   m_ObjectHideFlags: 0

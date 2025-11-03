@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7212878761149724292}
   - component: {fileID: 4980204092784603103}
   - component: {fileID: 5889063271972543846}
-  m_Layer: 0
+  - component: {fileID: 2151052094621479574}
+  m_Layer: 6
   m_Name: Pistol Tower
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -114,8 +115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 8
-  damage: 25
+  damage: 10
   fireRate: 1
+  cost: 50
   first: 1
   last: 0
   strong: 0
@@ -136,6 +138,32 @@ MonoBehaviour:
   rangeCollider: {fileID: 2451391661446371628}
   gray: {r: 0.2754717, g: 0.2754717, b: 0.2754717, a: 0.53333336}
   red: {r: 0.8792453, g: 0.03815583, b: 0.03815583, a: 0.5058824}
+--- !u!114 &2151052094621479574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796792941233000190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffc4c97902dfb9439299891db9f8c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - range: 8
+    damage: 20
+    fireRate: 1
+    cost: 100
+  - range: 9
+    damage: 25
+    fireRate: 0.8
+    cost: 150
+  - range: 9
+    damage: 30
+    fireRate: 0.7
+    cost: 225
+  towerRange: {fileID: 972472248071604318}
 --- !u!1 &6094371209821162707
 GameObject:
   m_ObjectHideFlags: 0
