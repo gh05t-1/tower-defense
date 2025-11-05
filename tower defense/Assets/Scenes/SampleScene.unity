@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0460cc41773fea147ac7c9f335a2d011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 500
   money: 150
   HPGUI: {fileID: 687674647}
   moneyGUI: {fileID: 558705189}
